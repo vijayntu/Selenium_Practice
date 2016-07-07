@@ -9,7 +9,7 @@ public class Tooltip_Selenium {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "F:/Selenium/Docs/Webdriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "F:/Selenium/Docs/WebDriver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.seleniumhq.org");
 		
