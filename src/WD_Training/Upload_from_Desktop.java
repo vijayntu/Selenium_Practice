@@ -15,9 +15,9 @@ public class Upload_from_Desktop {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		driver.get("http://www.tinypic.com/");
+		driver.get("https://postimage.org/");
 		
-		driver.findElement(By.id("the_file")).click();
+		driver.findElement(By.xpath("//*[@id='uploadControls']/div[3]/div/a")).click();
 		
 		Thread.sleep(3000);
 		
