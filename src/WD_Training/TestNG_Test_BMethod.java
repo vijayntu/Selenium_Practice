@@ -48,7 +48,7 @@ WebDriver driver;
 	@Test
 	public void Login()
 	{
-		driver.navigate().back();
+		//driver.navigate().back();
 		driver.findElement(By.name("userName")).sendKeys("test");
 		driver.findElement(By.name("password")).sendKeys("test");
 		driver.findElement(By.name("login")).click();

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vijay1">
+  <test name="Regression1">
+  <groups>
+		  <run>
+		  <include name = "sanity"></include>
+		  </run>
+  </groups>
+   <classes>
+      <class name="WD_Training.Groups_Test"/>
+   </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
