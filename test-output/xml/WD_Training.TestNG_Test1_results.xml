@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression1"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.762">
+  <properties />
+  
+  
+            <testcase name="Login" time="1.746" classname="WD_Training.TestNG_Test1" />
+                <testcase name="Register" time="1.016" classname="WD_Training.TestNG_Test1" />
+      
+</testsuite>

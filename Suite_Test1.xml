@@ -5,11 +5,7 @@
     <classes>
       <class name="WD_Training.TestNG_Priority_Test"/>
       <class name="WD_Training.TestNG_Test_BMethod"/>
-      <class name="WD_Training.JUnit3_Test_Asserts"/>
-      <class name="WD_Training.JUnit_2Tests"/>
-      <class name="WD_Training.JUnit_2Tests_2"/>
       <class name="WD_Training.TestNG_Test1"/>
-      <class name="WD_Training.JUnit_Test1"/>
-    </classes>
+      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Vijay]">
-  <test name="Regression(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Vijay]" parallel="classes">
+  <test name="Regression1(failed)" parallel="classes">
     <classes>
-      <class name="WD_Training.TestNG_Priority_Test">
+      <class name="WD_Training.TestNG_Test1">
         <methods>
-          <include name="Closebrowser"/>
-          <include name="Register"/>
-          <include name="Login"/>
           <include name="Startbrowser"/>
+          <include name="Closebrowser"/>
         </methods>
-      </class> <!-- WD_Training.TestNG_Priority_Test -->
+      </class> <!-- WD_Training.TestNG_Test1 -->
       <class name="WD_Training.TestNG_Test_BMethod">
         <methods>
           <include name="bmethod"/>
@@ -20,12 +18,6 @@
           <include name="Closebrowser"/>
         </methods>
       </class> <!-- WD_Training.TestNG_Test_BMethod -->
-      <class name="WD_Training.TestNG_Test1">
-        <methods>
-          <include name="Startbrowser"/>
-          <include name="Closebrowser"/>
-        </methods>
-      </class> <!-- WD_Training.TestNG_Test1 -->
     </classes>
-  </test> <!-- Regression(failed) -->
+  </test> <!-- Regression1(failed) -->
 </suite> <!-- Failed suite [Vijay] -->

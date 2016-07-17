@@ -52,7 +52,7 @@ WebDriver driver;
 		driver.findElement(By.name("userName")).sendKeys("test");
 		driver.findElement(By.name("password")).sendKeys("test");
 		driver.findElement(By.name("login")).click();
-		Assert.assertEquals(driver.getTitle(), "Sign On: Mercury Tours");
+		Assert.assertEquals(driver.getTitle(), "Sign-on: Mercury Tours");
 	}
 	
 	@Test

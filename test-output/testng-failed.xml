@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Vijay1]">
-  <test name="Regression1(failed)">
-    <groups>
-      <run>
-        <include name="sanity"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Vijay]" parallel="classes">
+  <test name="Regression1(failed)" parallel="classes">
     <classes>
-      <class name="WD_Training.Groups_Test">
+      <class name="WD_Training.TestNG_Test1">
         <methods>
-          <include name="Login"/>
+          <include name="Startbrowser"/>
+          <include name="Closebrowser"/>
         </methods>
-      </class> <!-- WD_Training.Groups_Test -->
+      </class> <!-- WD_Training.TestNG_Test1 -->
+      <class name="WD_Training.TestNG_Test_BMethod">
+        <methods>
+          <include name="bmethod"/>
+          <include name="Login"/>
+          <include name="Startbrowser"/>
+          <include name="Amethod"/>
+          <include name="Closebrowser"/>
+        </methods>
+      </class> <!-- WD_Training.TestNG_Test_BMethod -->
     </classes>
   </test> <!-- Regression1(failed) -->
-</suite> <!-- Failed suite [Vijay1] -->
+</suite> <!-- Failed suite [Vijay] -->

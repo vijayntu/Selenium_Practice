@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Vijay1" duration-ms="32" started-at="2016-07-15T08:57:39Z" finished-at="2016-07-15T08:57:39Z">
+  <suite name="Vijay" duration-ms="20905" started-at="2016-07-15T16:26:08Z" finished-at="2016-07-15T16:26:28Z">
     <groups>
-      <group name="sanity">
-        <method signature="Groups_Test.Login()[pri:0, instance:WD_Training.Groups_Test@2a5ca609]" name="Login" class="WD_Training.Groups_Test"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Regression1" duration-ms="32" started-at="2016-07-15T08:57:39Z" finished-at="2016-07-15T08:57:39Z">
-      <class name="WD_Training.Groups_Test">
-        <test-method status="FAIL" signature="Login()[pri:0, instance:WD_Training.Groups_Test@2a5ca609]" name="Login" duration-ms="15" started-at="2016-07-15T16:57:39Z" finished-at="2016-07-15T16:57:39Z">
-          <exception class="java.lang.NullPointerException">
+    <test name="Regression1" duration-ms="20905" started-at="2016-07-15T16:26:08Z" finished-at="2016-07-15T16:26:28Z">
+      <class name="WD_Training.TestNG_Test_BMethod">
+        <test-method status="FAIL" signature="Login()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="Login" duration-ms="1818" started-at="2016-07-16T00:26:19Z" finished-at="2016-07-16T00:26:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sign On: Mercury Tours] but found [Sign-on: Mercury Tours]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at WD_Training.Groups_Test.Login(Groups_Test.java:36)
+              <![CDATA[java.lang.AssertionError: expected [Sign On: Mercury Tours] but found [Sign-on: Mercury Tours]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at WD_Training.TestNG_Test_BMethod.Login(TestNG_Test_BMethod.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -25,27 +30,62 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-      </class> <!-- WD_Training.Groups_Test -->
+        <test-method status="PASS" signature="bmethod()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="bmethod" is-config="true" duration-ms="0" started-at="2016-07-16T00:26:19Z" finished-at="2016-07-16T00:26:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method status="PASS" signature="Amethod()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="Amethod" is-config="true" duration-ms="1" started-at="2016-07-16T00:26:21Z" finished-at="2016-07-16T00:26:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Amethod -->
+        <test-method status="PASS" signature="Register()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="Register" duration-ms="1135" started-at="2016-07-16T00:26:21Z" finished-at="2016-07-16T00:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+        <test-method status="PASS" signature="bmethod()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="bmethod" is-config="true" duration-ms="0" started-at="2016-07-16T00:26:21Z" finished-at="2016-07-16T00:26:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method status="PASS" signature="Amethod()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="Amethod" is-config="true" duration-ms="0" started-at="2016-07-16T00:26:22Z" finished-at="2016-07-16T00:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Amethod -->
+      </class> <!-- WD_Training.TestNG_Test_BMethod -->
+      <class name="WD_Training.TestNG_Test1">
+        <test-method status="PASS" signature="Startbrowser()[pri:0, instance:WD_Training.TestNG_Test1@51565ec2]" name="Startbrowser" is-config="true" duration-ms="6217" started-at="2016-07-16T00:26:08Z" finished-at="2016-07-16T00:26:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Startbrowser -->
+        <test-method status="PASS" signature="Startbrowser()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="Startbrowser" is-config="true" duration-ms="5139" started-at="2016-07-16T00:26:14Z" finished-at="2016-07-16T00:26:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Startbrowser -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:WD_Training.TestNG_Test1@51565ec2]" name="Login" duration-ms="1532" started-at="2016-07-16T00:26:19Z" finished-at="2016-07-16T00:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Register()[pri:0, instance:WD_Training.TestNG_Test1@51565ec2]" name="Register" duration-ms="1178" started-at="2016-07-16T00:26:20Z" finished-at="2016-07-16T00:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+        <test-method status="PASS" signature="Closebrowser()[pri:0, instance:WD_Training.TestNG_Test1@51565ec2]" name="Closebrowser" is-config="true" duration-ms="3352" started-at="2016-07-16T00:26:22Z" finished-at="2016-07-16T00:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+        <test-method status="PASS" signature="Closebrowser()[pri:0, instance:WD_Training.TestNG_Test_BMethod@482f8f11]" name="Closebrowser" is-config="true" duration-ms="3193" started-at="2016-07-16T00:26:25Z" finished-at="2016-07-16T00:26:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+      </class> <!-- WD_Training.TestNG_Test1 -->
     </test> <!-- Regression1 -->
-  </suite> <!-- Vijay1 -->
+  </suite> <!-- Vijay -->
 </testng-results>
